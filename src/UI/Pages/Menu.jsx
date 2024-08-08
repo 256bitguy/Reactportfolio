@@ -14,7 +14,7 @@ const Menu = () => {
         <div className="lg:w-3/4">
           <div>
             <h1 className=" text-2xl md:text-4xl lg:text-7xl hover:bg-gray-400 rounded-lg" mt-5>
-              <Link to="/">Home</Link>
+              <Link to="/">Home </Link>
             </h1>
           </div>
           <div>
