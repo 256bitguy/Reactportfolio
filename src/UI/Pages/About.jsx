@@ -72,7 +72,7 @@ export const About = () => {
         <div className="grid grid-cols-4 gap-5 gap-y-5 text-center">
           <div className="inline-flex justify-center space-x-5">
             <img
-              src="public/cpp.svg"
+              src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/cpp.svg"
               style={{ height: "35px", width: "35px" }}
               className="mr-5"
             />
@@ -80,7 +80,7 @@ export const About = () => {
           </div>
           <div className="inline-flex justify-center space-x-5">
             <img
-              src="public/html.svg"
+              src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/html.svg"
               style={{ height: "35px", width: "35px" }}
               className="mr-5"
             />
@@ -88,7 +88,7 @@ export const About = () => {
           </div>
           <div className="inline-flex justify-center space-x-5">
             <img
-              src="public/css.svg"
+              src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/css.svg"
               style={{ height: "35px", width: "35px" }}
               className="mr-5"
             />
@@ -96,7 +96,7 @@ export const About = () => {
           </div>
           <div className="inline-flex justify-center space-x-5">
             <img
-              src="public/javascript.svg"
+              src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/javascript.svg"
               style={{ height: "35px", width: "35px" }}
               className="mr-5"
             />
@@ -104,7 +104,7 @@ export const About = () => {
           </div>
           <div className="inline-flex justify-center space-x-5">
             <img
-              src="public/react.svg"
+              src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/react.svg"
               style={{ height: "35px", width: "35px" }}
               className="mr-5"
             />
@@ -112,7 +112,7 @@ export const About = () => {
           </div>
           <div className="inline-flex justify-center space-x-5">
             <img
-              src="public/typescript.svg"
+              src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/typescript.svg"
               style={{ height: "35px", width: "35px" }}
               className="mr-5"
             />
@@ -120,7 +120,7 @@ export const About = () => {
           </div>
           <div className="inline-flex justify-center space-x-5">
             <img
-              src="public/tailwindcss.svg"
+              src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/tailwindcss.svg"
               style={{ height: "35px", width: "35px" }}
               className="mr-5"
             />
@@ -128,7 +128,7 @@ export const About = () => {
           </div>
           <div className="inline-flex justify-center space-x-5">
             <img
-              src="public/python.svg"
+              src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/python.svg"
               style={{ height: "35px", width: "35px" }}
               className="mr-5"
             />
