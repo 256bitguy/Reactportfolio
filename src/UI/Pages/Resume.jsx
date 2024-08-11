@@ -31,7 +31,7 @@ const Resume = () => {
     <div className='h-screen mt-5 w-screen flex justify-center items-center' >    
     
     <object class="pdf" 
-            data="https://github.com/256bitguy/Reactportfolio/blob/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/vivekRajResume.pdf"
+            data="https://coffee-caryn-65.tiiny.site"
             className='h-full w-1/2 rounded-sm'
         >
     </object>
