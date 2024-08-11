@@ -9,7 +9,7 @@ import {
         <div className="flex flex-2/9 justify-between m-5 text-white">
           <div>
             <img
-              src="public/vivek.png"
+              src="https://github.com/256bitguy/Reactportfolio/blob/master/public/vivek.png?raw=true"
               alt="sdf"
               style={{ height: "150px", width: "150px" }}
               className="object-cover rounded-full"

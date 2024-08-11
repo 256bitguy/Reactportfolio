@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import Resume from "./Resume";
 
 const Footer = () => {
   return (
     <>
-      <div className=" flex justify-between w-full   p-12 bg-black text-white ">
-        <div className="flex justify-between  w-1/6">
+      <div className=" flex sm:flex-col lg:flex-row sm:items-center justify-between sm:justify-between w-full   sm:p-12 bg-black text-white ">
+        <div className="grid grid-flow-row  gap-5">
           <div>
             <Link to="/projects">Projects</Link>
           </div>
@@ -18,7 +19,7 @@ const Footer = () => {
             <Link to="/about">About</Link>
           </div>
         </div>
-        <div className="grid grid-flow-row  relative right-20 gap-5">
+        <div className="grid grid-flow-row    gap-5">
           <div>
             <h3>67vivekraj@gmail.com</h3>
           </div>
@@ -26,7 +27,7 @@ const Footer = () => {
             <h3>+91 93353 22592</h3>
           </div>
         </div>
-        <div>asdfasdfsdf</div>
+        <div className="mr-5"><Link to="/resume">Resume</Link></div>
       </div>
       <div className=" flex justify-center bg-black   text-white">
         <h3>&#169; Copyright 2024</h3>
