@@ -3,33 +3,37 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen w-screen">
+    <div className="flex justify-center   ">
       {/* Vertical Menu */}
       <div className="flex  flex-4/5 md:flex-row gap-10">
-        <div className="w-1/12  text-center writing-mode-vertical py-10">
-          <h3 className="block transform -rotate-90 text-2xl">Menu</h3>
-        </div>
+        
 
         {/* Main Content */}
         <div className="lg:w-3/4">
+           
           <div>
-            <h1 className=" text-2xl md:text-4xl lg:text-7xl hover:bg-gray-400 rounded-lg" mt-5>
-              <Link to="/">Home </Link>
-            </h1>
-          </div>
-          <div>
-            <button className=" text-2xl md:text-4xl lg:text-8xl hover:bg-gray-400 rounded-lg mt-5">
+          <div className=" text-center flex  writing-mode-vertical py-10">
+          <h3 className="block transform -rotate-90 text-2xl">Menu</h3>
+          <button className=" sm:text-6xl text-6xl lg:text-6xl hover:bg-gray-400 rounded-lg mt-5">
               <Link to="/projects">Projects</Link>
             </button>
+        </div>
+            
           </div>
           <div>
-            <h2 className=" text-2xl md:text-4xl lg:text-8xl hover:bg-gray-400 rounded-lg mt-5">
+            <h2 className=" text-2xl md:text-4xl lg:text-6xl hover:bg-gray-400 rounded-lg mt-5">
               <Link to="/about">About</Link>
             </h2>
           </div>
           <div>
-            <h2 className=" text-2xl md:text-4xl lg:text-8xl hover:bg-gray-400 rounded-lg mt-5">
+            <h2 className=" text-2xl md:text-4xl lg:text-6xl hover:bg-gray-400 rounded-lg mt-5">
               <Link to="/contact">Contact</Link>
+            </h2>
+          </div>
+          <div>
+            <h2 className=" text-2xl md:text-4xl lg:text-6xl hover:bg-gray-400 rounded-lg mt-5">
+              <Link to="/resume">Resume</Link>
             </h2>
           </div>
         </div>
@@ -56,6 +60,7 @@ const Menu = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

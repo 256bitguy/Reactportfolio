@@ -6,11 +6,16 @@ import Home from "./UI/Pages/Home";
 import Menu from "./UI/Pages/Menu";
 import { Projects } from "./UI/Pages/Projects";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Resume from "./UI/Pages/Resume";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Menu />,
+  },
+  {
+    path: "/resume",
+    element: <Resume />,
   },
   {
     path: "/footer",
