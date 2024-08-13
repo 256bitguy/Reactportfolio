@@ -3,37 +3,35 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div className="flex items-center justify-center h-screen w-screen">
-    <div className="grid grid-flow-col gap-5 ">
+    <div className="flex sm:items-center sm:justify-center h-screen w-screen  bg-gray-100">
+    <div className="grid sm:grid-flow-col gap-5  grid-flow-row">
       {/* Vertical Menu */}
-      <div className=" text-center flex justify-top items-start writing-mode-vertical py-10">
-          <h3 className="block transform -rotate-90 text-2xl">Menu</h3>
+      <div className=" text-center flex justify-center items-start writing-mode-vertical py-10">
+          <h3 className="block transform sm:-rotate-90 text-4xl sm:text-2xl justify-center">Menu</h3>
         </div>
-      <div className="grid  gap-20">
-      
-
-        {/* Main Content */}
+      <div className="grid  gap-20 justify-center">
+      {/* Main Content */}
         <div className="lg:w-96 h-48">
            
           <div>
          
-          <button className=" sm:text-6xl text-6xl lg:text-6xl hover:text-7xl rounded-lg mt-5">
+          <button className=" md:text-5xl text-4xl   hover:text-7xl rounded-lg mt-5">
               <Link to="/projects">Projects</Link>
             </button>
             
           </div>
           <div>
-            <h2 className=" text-2xl md:text-4xl lg:text-6xl hover:text-7xl  rounded-lg mt-5">
+            <h2 className=" md:text-5xl text-4xl   hover:text-7xl rounded-lg mt-5">
               <Link to="/about">About</Link>
             </h2>
           </div>
           <div>
-            <h2 className=" text-2xl md:text-4xl lg:text-6xl hover:text-7xl  rounded-lg mt-5">
+            <h2 className=" md:text-5xl text-4xl   hover:text-7xl rounded-lg mt-5">
               <Link to="/contact">Contact</Link>
             </h2>
           </div>
           <div>
-            <h2 className=" text-2xl md:text-4xl lg:text-6xl hover:text-7xl  rounded-lg mt-5">
+            <h2 className="md:text-5xl text-4xl   hover:text-7xl rounded-lg mt-5">
               <Link to="/resume">Resume</Link>
             </h2>
           </div>
@@ -41,10 +39,10 @@ const Menu = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="w-96 flex justify-cemter items-end gap-4 p-5 font-sans">
-        <div className="grid gap-4">
+      <div className="w-96 flex justify-center items-end sm:gap-4 p-5 font-sans">
+        <div className="grid  gap-0 sm:gap-4">
           <div>
-            <h1 className="text-lg lg:text-3xl p-2 hover:text-4xl tracking-wide">67vivekraj@gmail.com</h1>
+            <h1 className="text-lg lg:text-3xl p-2  tracking-wide">67vivekraj@gmail.com</h1>
           </div>
           <div>
             <h1 className="text-lg lg:text-3xl p-2 tracking-wide">+91 93353 22592</h1>

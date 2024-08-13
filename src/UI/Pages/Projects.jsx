@@ -47,7 +47,7 @@ export const Projects = () => {
       <div>
         <Black title={"My Projects"} subtitle={"Contains different tech."} />
       </div>
-      <div>
+      <div className="w-screen">
         <ImageGrid desc={projectsDesc} />
       </div>
       <div className="flex w-full justify-center">

@@ -11,7 +11,7 @@ export const About = () => {
         <Black title={"About Me"} subtitle={"Front-End Developer"} />
       </div>
       <div className="flex align-center leading-loose  justify-center  ">
-        <div className="p-10 text-left w-1/2 sm:w:3/4">
+        <div className="sm:p-10 p-5 text-left sm:w-1/2 sm:w:3/4">
           <div className="self-center">
             {" "}
             <h2 className="text-3xl  self-center mb-4">About me..</h2>
@@ -69,7 +69,7 @@ export const About = () => {
             My Interests
           </h2>
         </div>
-        <div className="grid grid-cols-4 gap-5 gap-y-5 text-center">
+        <div className="grid sm:grid-cols-4 grid-cols-2 gap-5 sm:gap-y-5 text-center">
           <div className="inline-flex justify-center space-x-5">
             <img
               src="https://raw.githubusercontent.com/256bitguy/Reactportfolio/e858bb2a08b389ad3a636581ef69e0aae0209e76/public/cpp.svg"
@@ -137,20 +137,22 @@ export const About = () => {
         </div>
       </div>
 
-      <div className="flex  h-48 w-full justify-center">
+     <div className="w-full flex justify-center"> 
+     <div className="flex  h-48 w-48  justify-center flex-col sm:flex-row">
         <button className="inline-flex items-center h-10  rounded-md bg-black px-3.5 py-2.5 text-center p-5 m-5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          <Link to="/projects" className="flex  text-lg  items-center">
+          <Link to="/projects" className="flex  sm:text-lg  items-center">
             <ArrowRight className="mr-2" /> {/* Adjust margin as needed */}
             <span>All Projects</span>
           </Link>
         </button>
         <button className="inline-flex items-center h-10  rounded-md bg-black px-3.5 py-2.5 text-center p-5 m-5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          <Link to="/contact" className="flex  text-lg  items-center">
+          <Link to="/contact" className="flex   sm:text-lg  items-center">
             <ArrowRight className="mr-2" /> {/* Adjust margin as needed */}
             <span>Contacts</span>
           </Link>
         </button>
       </div>
+     </div>
       <Footer />
     </>
   );
