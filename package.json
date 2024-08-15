@@ -1,7 +1,7 @@
 {
   "name": "my-project",
   "private": true,
-  "proxy":true,
+  "proxy":"https://cloud.appwrite.io",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
