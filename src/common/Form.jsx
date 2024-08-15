@@ -8,6 +8,7 @@ export const IDEAS_DATABASE_ID = "66be1c06002c3e47b950"; // Replace with your da
 export const IDEAS_COLLECTION_ID = "66be1c88000af0a94196";
 
 export default function Form() {
+  console.log("1")
   const [data,setData]=useState({
     firstName:'',
     lastName:'',
