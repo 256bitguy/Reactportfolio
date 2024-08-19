@@ -9,9 +9,7 @@ export const Contact=()=>{
     <div> <Black title={"Contact to me"} subtitle={"Say Hello to me..."}/></div>
     <div> <Form/></div>
     <div> <Footer/></div>
-       
-       
-       
+      
     </>
     )
 };
