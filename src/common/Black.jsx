@@ -2,6 +2,7 @@ import {
     AlignJustify,
     BriefcaseBusiness,
   } from "lucide-react/dist/umd/lucide-react";
+import Options from "./Options";
   
   const Black = ({ title, subtitle }) => {
     return (
@@ -16,7 +17,7 @@ import {
             />
           </div>
           <div>
-            <AlignJustify  className="size-12 sm:size-32"/>
+            <Options/>
           </div>
         </div>
         <div className="flex-7/9  h-full  flex justify-center items-center">

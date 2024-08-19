@@ -3,11 +3,14 @@ import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { account, ID } from '../backend/appwrite';
 import { databases } from "../backend/appwrite";
+import { useNavigate } from 'react-router-dom';
 
 export const IDEAS_DATABASE_ID = "66be1c06002c3e47b950"; // Replace with your database ID
 export const IDEAS_COLLECTION_ID = "66be1c88000af0a94196";
 
 export default function Form() {
+  const navigate=useNavigate();
+  const [response,setResponse] = useState(false);
   console.log("1")
   const [data,setData]=useState({
     firstName:'',
@@ -23,16 +26,26 @@ export default function Form() {
       ...prevData,[name]:value
     }));
   }
-
-  function handleSubmit(e){
-    databases.createDocument(
+  async function createData(){
+  const response=await  databases.createDocument(
       IDEAS_DATABASE_ID,
       IDEAS_COLLECTION_ID,
       ID.unique(),
       data
     );
+  if(response) {
+    setResponse(true)
+    console.log(response);
+  }
+
+  }
+  function successNavigate(){
+    navigate('/');
+  }
+  function handleSubmit(e){
+    // createData()
     e.preventDefault();
-    console.log(data);
+    successNavigate()
   }
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -60,6 +73,7 @@ export default function Form() {
                 autoComplete="given-name"
                 value={data.firstName}
                 onChange={handleChange}
+                required={true}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -76,6 +90,7 @@ export default function Form() {
                 autoComplete="family-name"
                 value={data.lastName}
                 onChange={handleChange}
+                required={true}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -89,6 +104,7 @@ export default function Form() {
                 id="company"
                 name="company"
                 type="text"
+                required={true}
                 autoComplete="organization"
                 value={data.company}
                 onChange={handleChange}
@@ -106,6 +122,7 @@ export default function Form() {
                 name="gmailId"
                 type="email"
                 autoComplete="email"
+                required={true}
                 value={data.gmailId}
                 onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -140,6 +157,7 @@ export default function Form() {
                 type="tel"
                 autoComplete="tel"
                 value={data.contactNumber}
+                required={true}
                 onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />

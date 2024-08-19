@@ -31,7 +31,7 @@ const Resume = () => {
     <div className='h-screen  w-screen flex justify-center items-center' >    
     
     <object class="pdf" 
-            data="https://coffee-caryn-65.tiiny.site"
+            data="https://cloud.appwrite.io/v1/storage/buckets/66be7727003981f36db0/files/66be774d00300dde9b18/view?project=65e7da0e6398c0378216&mode=admin"
             className='h-full  w-screen rounded-sm'
         >
     </object>
