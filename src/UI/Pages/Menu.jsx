@@ -50,11 +50,11 @@ const Menu = () => {
           <div className="flex gap-8 pt-3 justify-center items-center lg:pt-5">
             <div>
               <h1 className="text-lg lg:text-2xl">
-                <Linkedin />
+               <a href="https://www.linkedin.com/in/vivek-raj-sde/"> <Linkedin /></a>
               </h1>
             </div>
             <div>
-              <h1 className="text-lg lg:text-2xl"><Github /></h1>
+              <h1 className="text-lg lg:text-2xl"><a href="https://github.com/256bitguy"><Github /></a></h1>
             </div>
           </div>
         </div>
