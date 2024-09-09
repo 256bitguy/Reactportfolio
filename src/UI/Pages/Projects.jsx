@@ -6,41 +6,43 @@ import { ArrowRight } from "lucide-react/dist/umd/lucide-react";
 
 const projectsDesc = [
   {
-    title: "Project 1",
-    Subtitle: "here is the description of project one",
-    src: "https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    imgsrc: 'public/coctail.png',
+    title: "Juice Order App",
+    subtitle: "An intuitive e-commerce platform for ordering a variety of fresh juices online.",
+    src: "foodjuicestore",
   },
   {
-    title: "Project 1",
-    Subtitle: "here is the description of project one",
-    src: "https://images.unsplash.com/photo-1576158114254-3ba81558b87d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    imgsrc: 'public/chatapp.png',
+    title: "Chat Application",
+    subtitle: "A real-time messaging app designed for seamless multi-user communication.",
+    src: "chatappcloud",
   },
   {
-    title: "Project 1",
-    Subtitle: "here is the description of project one",
-    src: "https://images.unsplash.com/photo-1576158114131-f211996e9137?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    imgsrc: 'public/redux.png',
+    title: "Redux Demo",
+    subtitle: "A comprehensive demonstration of Redux for state management in React applications.",
+    src: "resonant-clafoutis-d39f5e",
   },
   {
-    title: "Project 1",
-    Subtitle: "here is the description of project one",
-    src: "https://images.unsplash.com/photo-1579818277109-ad8de2e7cf80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGltYWdlfGVufDB8fDB8fHww",
+    imgsrc: 'public/thunk.png',
+    title: "Redux-Thunk Example",
+    subtitle: "Showcasing the integration of Redux-Thunk middleware for handling asynchronous actions.",
+    src: "reactthunk2",
   },
   {
-    title: "Project 1",
-    Subtitle: "here is the description of project one",
-    src: "https://images.unsplash.com/photo-1579781354186-012d7e850ad7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGltYWdlfGVufDB8fDB8fHww",
+    imgsrc: 'public/rdom.png',
+    title: "React Router DOM Basics",
+    subtitle: "A fundamental project illustrating the core concepts and usage of React Router DOM for navigation.",
+    src: "vivekrdom",
   },
   {
-    title: "Project 1",
-    Subtitle: "here is the description of project one",
-    src: "https://www.shutterstock.com/image-photo/happy-african-american-man-playing-football-1518200261",
-  },
-  {
-    title: "Project 1",
-    Subtitle: "here is the description of project one",
-    src: "https://www.shutterstock.com/image-photo/mature-confident-business-woman-standing-against-2321865463",
+    imgsrc: 'public/demo.png',
+    title: "Admin Dashboard",
+    subtitle: "A robust admin center for managing and overseeing institutional data effectively.",
+    src: "adminakalpitkademo",
   },
 ];
+
 export const Projects = () => {
   return (
     <>

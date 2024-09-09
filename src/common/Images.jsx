@@ -1,28 +1,30 @@
 import { Link } from "react-router-dom";
 
-const Images = ({ title, subtitle, src }) => {
+const Images = ({ title, subtitle, src, imgsrc }) => {
   return (
-    <div className="relative w-80 max-w-lg  h-80 mx-auto sm:h-96 sm:w-96 rounded-lg ">
-      <button className="sm:h-96  sm:w-96 h-80 w-80">
-        <Link to="https://www.linkedin.com/in/vivek-raj-sde/">
+    <div className="relative w-80 max-w-lg mx-auto bg-white border rounded-lg shadow-lg overflow-hidden">
+      {/* Image section */}
+      <div className="relative">
+        <a href={imgsrc} target="_blank" rel="noopener noreferrer">
           <img
-            src={src}
+            src={imgsrc}
             alt="Descriptive Alt Text"
-            className="object-cover  object-center group-hover:opacity-75 rounded-2xl"
-            
+            className="w-full h-48 object-cover"
           />
-        </Link>{" "}
-      </button>
+        </a>
+      </div>
 
-      <div className="absolute inset-0 flex flex-col items-center  text-left bg-black bg-opacity-50 text-white rounded-2xl">
-        <a href="https://www.linkedin.com/in/vivek-raj-sde/" target="_blank">
-          <h1 className="text-4xl font-bold mb-4 cursor-pointer hover:underline">
+      {/* Content section */}
+      <div className="p-4">
+        <a href={`https://${src}.netlify.app/`} target="_blank" rel="noopener noreferrer">
+          <h1 className="text-2xl font-bold mb-2 cursor-pointer hover:underline">
             {title}
           </h1>
         </a>
-        <p className="text-lg">{subtitle}</p>
+        <p className="text-lg text-gray-700">{subtitle}</p>
       </div>
     </div>
   );
 };
+
 export default Images;

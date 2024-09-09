@@ -7,7 +7,7 @@ const ImageGrid = ({ desc }) => {
         {desc.map((item) => {
           return (
             <div>
-              <Images title={item.title} subtitle={item.Subtitle} src={item.src} />
+              <Images title={item.title} subtitle={item.subtitle} src={item.src} imgsrc={item.imgsrc}/>
             </div>
           );
         })}
